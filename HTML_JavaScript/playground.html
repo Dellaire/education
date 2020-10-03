@@ -1,0 +1,32 @@
+<html>
+
+    <head>
+    
+        <style>
+            #output {
+                border: 2px solid;
+                margin-top: 10px;
+                height: 200px;
+            }
+        </style>
+    
+        <script type="text/javascript">
+        
+            function saySomething() {
+                var input = document.getElementById("input").value;
+                document.getElementById("output").innerHTML = input * 2;
+            }
+            
+        </script>
+        
+    </head>    
+
+    <body>
+        <div>
+            <input id="input"/>
+            <button id="action" onclick="saySomething()">Go!</button>
+            <div id="output"/>
+        </div>
+    </body>
+
+</html>
