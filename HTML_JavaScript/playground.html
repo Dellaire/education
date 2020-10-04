@@ -31,21 +31,24 @@
                 someNumber += 1;
                 someNumber++;
                 
+                var output = "";
                 var someBoolean = true;
                 if(someBoolean == true) {
-                    output += "boolean was true";
+                    output = "boolean was true";
                 }
                 
+                var output = "";
                 var someString = "string";
                 var someCharacter = someString.charAt(2);
                 if(someCharacter != "") {
-                    output += "character was not empty";
+                    output = "character was not empty";
                 }
                 
+                var output = "";
                 var someString = "string";
                 var index = 0;
                 while(someString.charAt(index) != "") {
-                    output += "current character is " + someString.charAt(index);
+                    output += "character at position " + index + " is " + someString.charAt(index);
                     index++;
                 }
                 
