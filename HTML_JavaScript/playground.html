@@ -2,6 +2,16 @@
 
     <head>
     
+        <meta charset="utf-8">
+    
+        <!--
+        Tasks for Strings:
+        * count length
+        * character filtering
+        * acronym detection of a variable and a constant string
+        * acronym detection of two variable strings
+        -->
+    
         <style>
             #output {
                 border: 2px solid;
@@ -12,9 +22,39 @@
     
         <script type="text/javascript">
         
-            function saySomething() {
+            function basicConcepts() {
+            
+                var output = "";
+            
+                var someNumber = 1;
+                someNumber = someNumber + 1;
+                someNumber += 1;
+                someNumber++;
+                
+                var someBoolean = true;
+                if(someBoolean == true) {
+                    output += "boolean was true";
+                }
+                
+                var someString = "string";
+                var someCharacter = someString.charAt(2);
+                if(someCharacter != "") {
+                    output += "character was not empty";
+                }
+                
+                var someString = "string";
+                var index = 0;
+                while(someString.charAt(index) != "") {
+                    output += "current character is " + someString.charAt(index);
+                    index++;
+                }
+                
                 var input = document.getElementById("input").value;
                 document.getElementById("output").innerHTML = input * 2;
+            }
+        
+            function calculate() {
+                
             }
             
         </script>
@@ -24,7 +64,7 @@
     <body>
         <div>
             <input id="input"/>
-            <button id="action" onclick="saySomething()">Go!</button>
+            <button id="action" onclick="calculate()">Go!</button>
             <div id="output"/>
         </div>
     </body>
