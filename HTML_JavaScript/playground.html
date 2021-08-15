@@ -22,6 +22,13 @@
     
         <script type="text/javascript">
         
+            function playground() {
+            
+                var aNumber = 7;
+                
+                addToOutput(aNumber);
+            }
+        
             function basicConcepts() {
             
                 var output = "";
@@ -55,9 +62,20 @@
                 var input = document.getElementById("input").value;
                 document.getElementById("output").innerHTML = input * 2;
             }
-        
-            function calculate() {
-                
+            
+            function input() {
+            
+                return document.getElementById("input").value;
+            }
+            
+            function addToOutput(output) {
+            
+                document.getElementById("output").innerHTML += output + "</br>";
+            }
+            
+            function output(output) {
+            
+                document.getElementById("output").innerHTML = output;
             }
             
         </script>
@@ -67,7 +85,7 @@
     <body>
         <div>
             <input id="input"/>
-            <button id="action" onclick="calculate()">Go!</button>
+            <button id="action" onclick="playground()">Go!</button>
             <div id="output"/>
         </div>
     </body>
